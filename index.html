@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.9.0/axios.min.js"
+      integrity="sha512-FPlUpimug7gt7Hn7swE8N2pHw/+oQMq/+R/hH/2hZ43VOQ+Kjh25rQzuLyPz7aUWKlRpI7wXbY6+U3oFPGjPOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body class="bg-[url(./images/bg.jpg)] bg-no-repeat bg-cover">
+    <header class="h-24 w-full fixed top-0">
+      <div
+        class="max-w-screen-lg mx-auto h-full flex items-center justify-between"
+      >
+        <h1 class="text-4xl font-bold text-white">WeatherNow</h1>
+        <div class="h-full flex items-center">
+          <input
+            type="text"
+            name=""
+            id="search"
+            placeholder="Please input your region..."
+            class="bg-white/20 text-white px-4 py-2 rounded-lg focus-within:outline-none"
+          />
+        </div>
+      </div>
+    </header>
+    <div class="max-w-screen-lg mx-auto mt-24">
+      <button
+        class="bg-blue-500 text-white font-bold p-4 rounded-md"
+        onclick="getData()"
+      >
+        Send request
+      </button>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
